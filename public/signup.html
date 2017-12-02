@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Signup + Preferences</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+  <link href="assets/css/reset.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+   <div class="row">
+    <nav class="navbar">
+      <div class="container-fluid topbar">
+      <div class="col-md-2">
+      <a class="navbar-brand" href="index.html">
+        <img id="logo" alt= "Closets For Good logo" src="assets/images/c4g_logo.png" height="150px"></a>
+      </div>
+      <div class="col-md-6">
+          <a href="index.html">
+          <img id="wordmark" alt= "Closets For Good wordmark" src="assets/images/logotext.png" height="150px"></a>
+      </div>
+  </nav>
+</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-7 col-md-offset-1">
+        <h3 class="intro">Sign Up + Set Preferences</h3>
+          <br>
+        <form class="signup">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email-input" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="password-input" placeholder="Password">
+          </div>
+
+          <div class="form-group guide">
+            <label for="gender">Gender</label>
+            <input type="radio" id="gender-input"
+             name="gender" value="male">
+            <label for="genderChoice1">male</label>
+            <input type="radio" id="gender-input"
+             name="gender" value="male">
+            <label for="genderChoice1">female</label>
+          </div>
+
+          <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> <span class="msg"></span>
+          </div>
+            <br>
+              <h4>Do you have a goal in mind?</h4> 
+
+                <p>Evaluate our Small, Medium and Large Target Wardrobe Guides, in case one aids your closet goals. Our guides make getting started simpler.</p>
+
+                <p>You choose to enact an Immediate Action Plan, to follow your map over a longer course of time, or to track your own closet maintenance as you go.</p>
+            <br>
+
+        <!-- 1st accordion panel -->
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                   <div class="panel-heading signup-accordion">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle" data-toggle="collapse" href="#collapseOne">Click to view Target Wardrobe Guides.
+                      </a>
+                    </h4>
+                   </div>
+                  <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <ul> 
+                        <span class="bold">You can select a Wardrobe Guide, or skip.</span>
+                        <br>
+                        <li class="guide"> Minimalist (getting your wardrobe items under 40 items)  
+                          <input type="checkbox" name= "guide"></li>
+                        <li class="guide" > Streamliner (keeping wardrobe at 50-70 items)
+                          <input type="checkbox" name= "guide"></li>
+                        <li class="guide" >Expansionist (I need frequent wardrobe updates and tradeoffs)
+                          <input type="checkbox" name= "guide"></li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+            <br>
+            <br>
+       <!-- 2nd accordion panel -->
+                <div class="panel panel-default">
+                  <div class="panel-heading signup-accordion">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle" data-toggle="collapse" href="#collapseTwo">Designate Your Sizes
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse in">
+                    <div class="panel-body">
+        <!-- Sizes DropUp Menus display below, inline and in order of Tops, Bottoms and Shoes -->    
+            <!-- DropUp for Tops -->          
+                      <div class="dropup inline">
+                      <button class="btn btn-padded dropdown-toggle sizes" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Tops <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="top-size">
+                        <li><input type="checkbox" name="top-size">S</li>
+                        <li><input type="checkbox" name="top-size">S/M</li>
+                        <li><input type="checkbox" name="top-size">M</li>
+                        <li><input type="checkbox" name="top-size">M/L</li>
+                        <li><input type="checkbox" name="top-size">L</li>
+                        <li><input type="checkbox" name="top-size">XL</li>
+                        <li><input type="checkbox" name="top-size">2X</li>
+                        <li><input type="checkbox" name="top-size">3X</li>
+                        <li role="separator" class="divider"></li>
+                        <li><input type="checkbox" name="top-size">M</li>
+                      </ul>
+                      </div> <!-- closes TOPS dropup -->
+                  
+            <!-- DropUp for Bottoms -->  
+                    <div class="dropup inline">
+                      <button class="btn btn-padded dropdown-toggle sizes" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Bottoms <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="bottom-size">
+                        <li><input type="checkbox" name="bottom-size">0</li>
+                        <li><input type="checkbox" name="bottom-size">2/M</li>
+                        <li><input type="checkbox" name="bottom-size">4</li>
+                        <li><input type="checkbox" name="bottom-size">6</li>
+                        <li><input type="checkbox" name="bottom-size">8</li>
+                        <li><input type="checkbox" name="bottom-size">10</li>
+                        <li><input type="checkbox" name="bottom-size">12</li>
+                        <li><input type="checkbox" name="bottom-size">14</li>
+                        <li><input type="checkbox" name="bottom-size">16</li>
+                        <li><input type="checkbox" name="bottom-size">18</li>
+                        <li><input type="checkbox" name="bottom-size">20</li>       
+                        <li><input type="checkbox" name="bottom-size">22</li>       
+                        <li role="separator" class="divider"></li>
+                        <li><input type="checkbox" name="bottom-size">10</li>
+                      </ul>
+                    </div> <!-- closes BOTTOMS dropup -->
+
+            <!-- DropUp for Shoes -->  
+                      <div class="dropup inline">
+                      <button class="btn btn-padded dropdown-toggle sizes" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Shoes <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="shoe-size">
+                        <li><input type="checkbox" name="shoe-size">5</li>
+                        <li><input type="checkbox" name="shoe-size">6</li>
+                        <li><input type="checkbox" name="shoe-size">7</li>
+                        <li><input type="checkbox" name="shoe-size">8</li>
+                        <li><input type="checkbox" name="shoe-size">9</li>
+                        <li><input type="checkbox" name="shoe-size">10</li>
+                        <li><input type="checkbox" name="shoe-size">11</li>
+                        <li><input type="checkbox" name="shoe-size">12</li>
+                        <li><input type="checkbox" name="shoe-size">13</li>
+                        <li><input type="checkbox" name="shoe-size">14</li>
+                        <li><input type="checkbox" name="shoe-size">15</li>          
+                        <li role="separator" class="divider"></li>
+                        <li><input type="checkbox" name="shoe-size">9</li>
+                      </ul>
+                      </div> <!-- closes SHOES dropup -->
+                    </div>
+                  </div>
+                
+                </div> <!-- closes collapseTwo accordion-toggle panel group -->
+                <br>
+                <br>
+        <!-- collapseThree accordion panel -->
+                  <div class="panel panel-default">
+                   <div class="panel-heading signup-accordion">
+                    <h4 class="panel-title">
+                      <a class="accordion-toggle" data-toggle="collapse" href="#collapseThree">Your Favorite Colors</a>
+                    </h4>
+                   </div>
+                  <div id="collapseThree" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <!-- insert dropdown with color boxes -->
+                      <!-- Color Palette -->
+                      <button id="white" class="color-box"></button>
+                      <button id="cream" class="color-box"></button>
+                      <button id="yellow" class="color-box"></button>
+                      <button id="gold" class="color-box"></button>
+                      <button id="orange" class="color-box"></button>
+                      <button id="red" class="color-box"></button>
+                      <button id="brick-red" class="color-box"></button>
+                      <button id="magenta" class="color-box"></button>
+                      <button id="baby-pink" class="color-box"></button>
+                      </div>
+                    <div class="panel-body">
+                      <button id="purple" class="color-box"></button>
+                      <button id="blue" class="color-box"></button>
+                      <button id="navy" class="color-box"></button>
+                      <button id="teal" class="color-box"></button>
+                      <button id="green" class="color-box"></button>
+                      <button id="brown" class="color-box"></button>
+                      <button id="beige" class="color-box"></button>
+                      <button id="gray" class="color-box"></button>
+                      <button id="black" class="color-box"></button>
+                    </div>
+                  </div>
+                  </div>
+              
+
+                <!-- after accordion panels -->
+                 <br>
+               <br>
+             <br>
+           <br>
+          <button type="submit" class="btn btn-padded" id="signup">Sign Up</button>
+          <br>
+
+          <p>Or log in <a href="login.html">here</a></p>
+           <br>
+             <br>
+    </form>
+     </div> </div>   <!--closes the main column -->
+
+        <!-- right side-panel -->
+        <div class="col-md-2 sidebar">
+        <a class="twitter-timeline" data-width="300" data-height="600" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/closets4good?ref_src=twsrc%5Etfw">Tweets by closets4good</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <!--       <hr> img subbed-in before embed performed on heroku
+            <img src="assets/images/300x600-sample-timeline-embed.png"> -->
+          <br>
+          <a href="http://atrscorp.com/textile-recycling-smart-association-infographics/" target="_blank"><img class="padded-image" src="assets/images/recycle-direct.png"></a>
+        </div> <!-- closes the sidebar column-->
+      </div> <!-- closes the 1 row -->
+ <!-- closes the body row -->
+    </div> <!-- closes the body container -->
+
+<!-- no footer needed here -->
+  <script type="text/javascript" src="js/signup.js"></script>
+
+</body>
+
+</html>

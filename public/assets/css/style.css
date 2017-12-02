@@ -1,0 +1,394 @@
+ body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #2f2f2f;
+  max-height: 800px;
+ }
+ 
+ header {
+  height: 100px;
+ }
+
+ header > nav {
+  height: 100%;
+ }
+
+ footer {
+  margin-bottom: 30px;
+  padding: 10px;
+  text-align: center;
+ }
+
+
+ h1 {
+  font-weight: 200; padding: 20px;
+ }
+
+ h2 {
+  font-weight: bold; font-size: 60px; 
+  padding-bottom: 20px;
+ }
+
+ h3 {
+  font-weight: bold; font-size: 40px; 
+  padding: 20px;
+ }
+
+ h4 {
+  font-size: 26px;
+ }
+
+ p {
+  font-size: 18px;
+  line-height: 1.7;
+ }
+
+ a {
+  color: #0bafc7;
+  text-decoration: none;
+  font-size: 1.2em;
+ }
+
+ a:hover {
+  color: #000;
+ }
+
+#logo {
+  margin-left: 20px;
+}
+
+#wordmark {
+  clear: left;
+}
+
+.input-group {
+  margin-top: 35px;
+ }
+
+.btn-padded {
+  margin: 10px;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 1.3em;
+  padding-bottom: 30px;
+}
+
+#midImage { 
+  /* The image used */
+  background-image: url("../images/sample-wardrobe.png");
+
+  /* Set a specific height */
+  height: 350px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* My Closet Page */
+
+#closet {
+  background-image: url("../images/closet.png");
+  height: 960px;
+  position: relative;
+  left: -90px;
+  top: 30px;
+}
+
+#my-closet {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  top: -50px;
+  color: #f8705a; 
+}
+
+#personal-wardobe {
+  font-size: 25px;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  top: -50px;
+}
+
+#color-square {
+  background-color: #D5FDFF;
+  width: 760px;
+  height: 650px;
+  padding: 10px;
+  position: absolute;
+  left: 100px; 
+  bottom: 215px;
+  opacity: 0.95;
+}
+
+#closet-options {
+  position: relative;
+  left: 100px;
+}
+
+.clothing-categories {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  z-index: 8;
+  color: #f8705a;
+}
+
+.closet-items {
+  display: inline-block;
+  margin: 10px 2px 10px 10px;
+  font-size: 18px; 
+  position: relative;
+  z-index: 8;
+}
+
+select {
+  position: relative;
+  z-index: 8;
+  display: inline-block;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: 0;
+  border-radius: 3px;
+}
+
+#build-closet {
+  border-bottom: solid #7feeff 2px;
+  border-right: solid #7feeff 2px;
+  border-left: none;
+  border-top: none;
+  background-color: #fff;
+  font-size: 20px;
+  text-transform: none;
+  position: relative;
+  z-index: 8;
+  left: 265px;
+  top: 35px;
+}
+
+/*Resources Page ------------------------------------------*/
+#resources-h3 {
+  color: #f8705a;
+  padding: 15px;
+  padding-left: 0;
+}
+
+.articles {
+  font-size: 23px;
+  font-weight: bold;
+}
+/*-------------------------------------------------------*/
+.main {
+  margin: 50px;
+}
+
+
+.sidebar {
+  padding-left: 40px;
+}
+/* set hoover for .btn to get bright 
+
+.class {
+  margin: 10px;
+}
+*/
+
+.foot-pedal {
+  background: #2f2f2f;
+  color: #fff;
+  padding: 15px;
+}
+
+.frontpage-btn,
+#signup  {
+  border-bottom: solid #7feeff 2px;
+  border-right: solid #7feeff 2px;
+  border-left: none;
+  border-top: none;
+  background-color: #D5FDFF;
+  font-size: 18px;
+}
+
+#signup  {
+  border-bottom: solid #0bafc7 2px;
+  border-right: solid #0bafc7 2px;
+}
+
+.panel-heading.signup-accordion {
+  background: #D5FDFF;
+  border-bottom: solid #e3e3e3 1px;
+  padding-left: 35px;
+  padding-top: 20px;
+}
+
+a.accordion-toggle {
+  font-size: 20px;
+}
+
+ul.dropdown-menu {
+  padding-left: 10px;
+}
+
+input.dropdown-menu {
+  padding-left: 10px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 5px;
+}
+.guide {
+  font-size: 18px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.padded-image {
+  margin-top: 20px;
+}
+/* for the */
+.sizes {
+  border-bottom: solid #7feeff 2px;
+  border-right: solid #7feeff 2px;
+  border-left: none;
+  border-top: none;
+  text-transform: none;
+  font-size: 16px;
+  background-color: #fff;
+  color: #2f2f2f;
+  display: inline-block;
+  margin: 10px;
+}
+
+.intro  {
+  color: #f8705a; 
+}
+
+#quotes {
+  width: 650px;
+  height: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+
+}
+
+#foot-pedal, #my-closet {
+padding-top: 0;
+color: #f8705a; 
+}
+
+#foot-pedal  {
+line-height: 1.3;
+}
+
+.copyright {
+  color: #D5FDFF;
+  font-size: 1.3em;
+}
+
+.slow-fashion-cause {
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.color-box {
+  border: solid black 2px;
+  padding: 20px;
+  margin: 5px;
+}
+/* Favorite Colors selection boxes, 
+for preferences accordion panel of same name */
+
+#white {
+  background-color: #fff;
+}
+
+#cream {
+  background-color: #fff3c6;
+}
+
+#yellow {
+  background-color: #fff20c;
+}
+
+#gold {
+  background-color: #ffd711;
+}
+
+#orange {
+  background-color: #ff9509;
+}
+
+#red {
+  background-color: #fc2500;
+}
+
+#brick-red {
+  background-color: #8c0b0b;
+}
+
+#magenta {
+  background-color: #d31564;
+}
+
+#baby-pink {
+  background-color: #ff9bb3;
+}
+
+#purple {
+  background-color: #7a0791;
+}
+
+#blue {
+  background-color: #4055c9;
+}
+
+#navy {
+  background-color: #293789;
+}
+
+#teal {
+  background-color: #26d693;
+}
+
+#green {
+  background-color: #03ac13;
+}
+
+#brown {
+  background-color: #895e21;
+}
+
+#beige {
+  background-color: #d6a259;
+}
+
+#gray {
+  background-color: #bfbab3;
+}
+
+#black {
+  background-color: #000000;
+}
